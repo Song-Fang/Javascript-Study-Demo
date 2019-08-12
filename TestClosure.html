@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function addCount(){
+        let count = 2;
+        function myFunction(){
+          count++;
+          return count;
+        }
+        return myFunction;
+      }
+
+      const addNumber = addCount();
+      const c1 = addNumber();
+      const c2 = addNumber();
+      const c3 = addNumber();
+      console.log(`The answer is c1:${c1}, c2:${c2},c3:${c3}`);
+
+
+    </script>
+  </body>
+</html>

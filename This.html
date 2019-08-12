@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+    const jelly = {
+      name:'jelly',
+      age:20,
+      hobby:['sleeping','swimming','coding','basketball'],
+      printHobbies: function(){
+        this.hobby.map((hobby,i)=>{
+          console.log(`${this.name} loves ${hobby} ${i}`);
+        })
+      }
+    }
+
+    jelly.printHobbies();
+
+
+  </script>
+  <body>
+
+  </body>
+</html>

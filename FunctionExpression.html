@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <script type="text/javascript">
+
+
+    let greet = name=>{alert(`hello:${name}`)};
+
+    greet('Lily');
+
+    const numbers = [1,2,3,4,5];
+    <!-- 数组的map方法，返回经过函数处理后的一个新的数组 -->
+    const double = numbers.map((num,i)=>{
+      return `${i}:${num*2}`});
+
+    const double2 = numbers.map(()=>{
+      return "hello world";
+    });
+
+    const double3 = numbers.map((num)=>{
+      console.log(`hello world! ${num}`);
+      <!-- 没有返回任何的值，所以新的数组中元素就变成了undefinedss-->
+    })
+
+    console.log(double3);
+
+
+
+  </script>
+  <body>
+
+  </body>
+</html>

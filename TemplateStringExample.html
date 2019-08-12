@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    const renderTodos = (todo)=>{
+      return `
+      <ul>
+        ${todo.map(todo=>
+          `<li>${todo.name} state: ${todo.completed?'yes':'no'}</li>`
+        ).join('')}
+      </ul>
+      `
+    }
+
+      const jelly = {
+        name:'jelly',
+        date:'2015-09-16',
+        todos:[
+          {name:'study',completed:true},
+          {name:'basketball',completed:false},
+          {name:'computer game',completed:true}
+        ]
+      }
+
+      const template = `
+        <div>
+          <div>${jelly.name}</div>
+          <div>
+            ${renderTodos(jelly.todos)}
+          </div>
+        </div>
+      `
+
+      console.log(template);
+      document.body.innerHTML = template;
+    </script>
+
+  </body>
+</html>
